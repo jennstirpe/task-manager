@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* HEADER STYLES */
+
+header {
+  border: 1px solid red;
+}
+
+/* TASK LIST STYLES */
+
+.tasks-list {
+  border: 1px solid orange;
+}
+
+/* TASK STYLES */
+
+.task {
+  border: 1px solid yellow;
+}
+
+/* BUTTON STYLES */
