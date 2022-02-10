@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Task = ( { id, title, description, day} ) => {
+const Task = ( { id, title, description, day, onDelete} ) => {
   return (
     <div className="task" key={id}>
         <p className="due-day">{day}</p>
@@ -9,8 +9,7 @@ const Task = ( { id, title, description, day} ) => {
             <p>{description}</p>
         </div>
         <div className="task-modify">
-            <button className="edit">Edit</button>
-            <button className="delete">Delete</button>
+            <button className="delete" onClick={() => onDelete(id)}>x</button>
         </div>
     </div>
   )
